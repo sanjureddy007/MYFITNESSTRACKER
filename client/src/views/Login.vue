@@ -31,7 +31,6 @@
 </template>
 
 <script>
-import { Login } from "../models/Users";
 
     export default {
         name: 'Login',
