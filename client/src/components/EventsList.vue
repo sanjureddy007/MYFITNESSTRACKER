@@ -15,17 +15,15 @@
 </template>
 <script>
   import EventCard1 from '@/components/EventCard1';
-    import EventCard2 from '@/components/EventCard2';
+  import EventCard2 from '@/components/EventCard2';
+  import EventCard3 from '@/components/EventCard3';
 
   export default {
     name: 'EventsList',
     components : {
-      EventCard1
+      EventCard1, EventCard2,EventCard3
     },
-    name: 'EventsList',
-    components : {
-      EventCard2
-    },
+
   }
 </script>
 <style lang="scss" scoped>
