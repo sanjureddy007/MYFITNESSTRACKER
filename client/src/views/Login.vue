@@ -31,6 +31,8 @@
 </template>
 
 <script>
+import { Login } from "../models/Users";
+
     export default {
         name: 'Login',
         data() {
@@ -58,13 +60,7 @@
     }
 </script>
 
-<style scoped>
-    #login {
-        width: 500px;
-        border: 1px solid #CCCCCC;
-        background-color: #FFFFFF;
-        margin: auto;
-        margin-top: 200px;
-        padding: 20px;
-    }
+<style >
+  
+    
 </style>
