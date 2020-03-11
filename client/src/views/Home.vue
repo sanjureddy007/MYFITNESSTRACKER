@@ -4,7 +4,7 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Welcome to THE FITNESSTRACKER APP        
+         INTRODUCING THE FITNESSTRACKER APP        
         </h1>
         <h2 class="subtitle">
           Get fit. Have fun. Repeat.

@@ -1,25 +1,31 @@
 <template>
   <div class="events container">
     <h2 class="subtitle is-3">
-    Check out our upcoming events
+    Features
     </h2>
     <div class="columns is-multiline">
   <div class="column is-one-quarter">
-    <EventCard />
+    <EventCard1 />
   </div>
   <div class="column is-one-quarter">
-    <EventCard />
+    <EventCard2 />
   </div>
 </div>
   </div>
 </template>
 <script>
-  import EventCard from '@/components/EventCard';
+  import EventCard1 from '@/components/EventCard1';
+    import EventCard2 from '@/components/EventCard2';
+
   export default {
     name: 'EventsList',
     components : {
-      EventCard
-    }
+      EventCard1
+    },
+    name: 'EventsList',
+    components : {
+      EventCard2
+    },
   }
 </script>
 <style lang="scss" scoped>

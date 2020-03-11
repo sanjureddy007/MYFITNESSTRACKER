@@ -2,7 +2,7 @@
   <div class="event-card">
     <div class="card">
       <div class="card-content">
-        <h2 class="is-size-4 has-text-weight-bold">Event name</h2>
+        <h2 class="is-size-4 has-text-weight-bold">Tracks calories burnt</h2>
       </div>
     </div>
   </div>
@@ -13,7 +13,7 @@
 </script>
 <style lang="scss" scoped>
   .card {
-    background-image: url('');
+    background-image: url('https://1kqgkv25axmak8hvkywxt71e-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/group-fitness-classes-768x512.jpg');
     height: 200px;
     background-position: center;
     background-size: cover;
