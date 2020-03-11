@@ -10,6 +10,9 @@
   <div class="column is-one-quarter">
     <EventCard2 />
   </div>
+  <div class="column is-one-quarter">
+    <EventCard3 />
+  </div>
 </div>
   </div>
 </template>
