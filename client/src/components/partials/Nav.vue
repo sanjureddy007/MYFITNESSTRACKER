@@ -14,8 +14,17 @@
     <div class="navbar-start">
       <router-link to="/" class="navbar-item" active-class="is-current">Home</router-link> 
       <router-link to="/about" class="navbar-item" active-class="is-current">About</router-link>
-      <router-link to="/login" class="navbar-item" active-class="is-current">Login</router-link>
       
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          
+          <a class="button is-light" href="/login">
+            Log in
+          </a>
+        </div>
+      </div>
     </div>
   </div>
   
