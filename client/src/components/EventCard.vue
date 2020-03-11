@@ -3,8 +3,6 @@
     <div class="card">
       <div class="card-content">
         <h2 class="is-size-4 has-text-weight-bold">Event name</h2>
-        <small class="event-date">Event date</small>
-        <span>Event location</span>
       </div>
     </div>
   </div>
@@ -15,7 +13,7 @@
 </script>
 <style lang="scss" scoped>
   .card {
-    background-image: url('https://placekitten.com/400/400');
+    background-image: url('');
     height: 200px;
     background-position: center;
     background-size: cover;
