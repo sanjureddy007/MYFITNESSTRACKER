@@ -1,4 +1,4 @@
-# events-app
+# client
 
 ## Project setup
 ```
