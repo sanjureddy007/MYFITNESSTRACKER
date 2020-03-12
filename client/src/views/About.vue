@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="container">
-      <p class="org-description is-size-4">Trying to lose weight, gain muscle, exercise more consistently, or push yourself to higher intensity workouts? Listen, everyone needs a little help when it comes to getting fit. Fitness apps give you that help by reminding you of your goals and prompting you to follow through on them. They also provide the tools and information you need, whether it's a calorie calculator or a trainer who plans your workouts and coaches you along. A few nudges in the right direction from a couple of great apps might make all the difference.</p>
+      <p class="org-description is-size-4">Trying to lose weight, gain muscle, exercise more consistently, or push yourself to higher intensity workouts? Listen, everyone needs a little help when it comes to getting fit. Fitness app give you that help by reminding you of your goals and prompting you to follow through on them. They also provide the tools and information you need, whether it's a calorie calculator or a trainer who plans your workouts and coaches you along. A few nudges in the right direction from a couple of great apps might make all the difference.</p>
       
     </div>
   </div>
