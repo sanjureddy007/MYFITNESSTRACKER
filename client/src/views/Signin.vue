@@ -1,5 +1,5 @@
 <template>
-<form class="container" @submit="login">
+<form class="container" @submit="signin">
   {{error}}
     <div class="field">
   <p class="control has-icons-left has-icons-right">
@@ -24,7 +24,7 @@
   <p class="control">
     
     <button class="button is-dark">
-      Login
+      Signin
     </button>
   </p>
 </div>
@@ -34,7 +34,7 @@
 <script>
 
     export default {
-        name: 'Login',
+        name: 'Signin',
         data() {
             return {
                 input: {
