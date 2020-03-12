@@ -8,8 +8,8 @@
       </div>
     </div>
     <div class="container">
-      <p class="org-description is-size-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quia aperiam eligendi dolorum reprehenderit ea amet, aliquid dolorem beatae, iste aliquam ullam. Sequi ab eligendi consectetur neque laudantium, libero asperiores.</p>
-      <p class="org-description is-size-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quia aperiam eligendi dolorum reprehenderit ea amet, aliquid dolorem beatae, iste aliquam ullam. Sequi ab eligendi consectetur neque laudantium, libero asperiores.</p>
+      <p class="org-description is-size-4">Trying to lose weight, gain muscle, exercise more consistently, or push yourself to higher intensity workouts? Listen, everyone needs a little help when it comes to getting fit. Fitness apps give you that help by reminding you of your goals and prompting you to follow through on them. They also provide the tools and information you need, whether it's a calorie calculator or a trainer who plans your workouts and coaches you along. A few nudges in the right direction from a couple of great apps might make all the difference.</p>
+      
     </div>
   </div>
 </template>
