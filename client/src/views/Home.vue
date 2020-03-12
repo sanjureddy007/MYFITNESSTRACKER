@@ -1,4 +1,5 @@
 <template>
+
 <div class="home">
   <section class="hero is-dark">
     <div class="hero-body">
@@ -9,6 +10,7 @@
         <h2 class="subtitle">
           Get fit. Have fun. Repeat.
         </h2>
+        
         
         
       </div>
@@ -36,7 +38,7 @@ export default {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 500px;
   }
   .hero-body .title {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);

@@ -1,9 +1,10 @@
 <template>
   <div class="about">
-    <div class="hero is-danger">
+    <div class="hero is-light">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title is-size-1">About fitness tracker</h1>        
+          <h1 class="title is-size-3">About fitness tracker</h1>  
+                
         </div>
       </div>
     </div>
