@@ -13,7 +13,7 @@
 </script>
 <style lang="scss" scoped>
   .card {
-    background-image: url('https://1kqgkv25axmak8hvkywxt71e-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/group-fitness-classes-768x512.jpg');
+    background-image: url('https://cdncellercise.scdn6.secure.raxcdn.com/wp-content/uploads/2019/07/Burn-Calories-1024x683.jpeg');
     height: 200px;
     background-position: center;
     background-size: cover;
