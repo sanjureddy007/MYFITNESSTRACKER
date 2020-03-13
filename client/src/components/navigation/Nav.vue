@@ -44,7 +44,7 @@ data: ()=>({
 
 <style lang="scss" scoped>
   nav {
-    margin-top: 25px;
+    margin-top: 0px;
     margin-bottom: 30px;
     a {
       font-weight: bold;

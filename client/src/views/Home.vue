@@ -14,7 +14,7 @@
     </div>
   </section>
     <EventsList />
-
+    
 </div>
 
 </template>
