@@ -9,10 +9,7 @@
         </h1>
         <h2 class="subtitle">
           Get fit. Have fun. Repeat.
-        </h2>
-        
-        
-        
+        </h2> 
       </div>
     </div>
   </section>
