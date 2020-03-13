@@ -41,29 +41,30 @@
 </template>
 
 <script>
+import { Signer } from "../models/signinusers";
 
     export default {
         name: 'Signup',
         data() {
             return {
                 input: {
+                    
                     username: "",
-                    password: ""
+                    email: "",
+                    password: "",
+                    error:""
                 }
             }
         },
         methods: {
-            login() {
-                if(this.input.username != "" && this.input.password != "") {
-                    if(this.input.username == this.$parent.mockAccount.username && this.input.password == this.$parent.mockAccount.password) {
-                        this.$emit("authenticated", true);
-                        this.$router.replace({ name: "secure" });
-                    } else {
-                        console.log("The username and / or password is incorrect");
-                    }
-                } else {
-                    console.log("A username and password must be present");
-                }
+            signup() {
+              try {
+                Signer(this.siginusername,this.email, this.password);
+                 window.alert(this.email);
+            } catch (error) {
+                this.error = error;
+            }
+                
             }
         }
     }

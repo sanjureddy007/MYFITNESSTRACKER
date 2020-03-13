@@ -1,6 +1,6 @@
 /* B"H
 */
-const Users = [
+var Users = [
     { Name: 'Moshe', Password: '2020', Email: 'plotkinm@newpaltz.edu' },
     { Name: 'Bracha', Password: '5780', Email: 'chabad@newpaltz.edu' },
     
