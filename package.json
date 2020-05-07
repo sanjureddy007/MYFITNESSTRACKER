@@ -13,7 +13,8 @@
     "express-load": "^1.1.16"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "webpack-dev-server": "^3.10.3"
   },
   "repository": {
     "type": "git",
@@ -24,8 +25,8 @@
   "bugs": {
     "url": "https://github.com/sanjureddy007/MYFITNESSTRACKER/issues"
   },
-  "homepage": "https://github.com/sanjureddy007/MYFITNESSTRACKER#readme",
-  "devDependencies": {
-    "webpack-dev-server": "^3.10.3"
-  }
+  "homepage": "https://github.com/sanjureddy007/MYFITNESSTRACKER#readme"
+  
+   
+  
 }
