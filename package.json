@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
-
-},
+    "start:dev": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sanjureddy007/MYFITNESSTRACKER.git"
@@ -17,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sanjureddy007/MYFITNESSTRACKER/issues"
   },
-  "homepage": "https://github.com/sanjureddy007/MYFITNESSTRACKER#readme"
+  "homepage": "https://github.com/sanjureddy007/MYFITNESSTRACKER#readme",
+  "devDependencies": {
+    "webpack-dev-server": "^3.10.3"
+  }
 }
