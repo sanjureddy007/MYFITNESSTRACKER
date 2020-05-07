@@ -117,7 +117,7 @@ export default {
                     this.profile_picture = profile.getImageUrl();
 
                     return Login("google", googleUser.getAuthResponse().access_token)
-                            .then(x=> this.$router.push('/game'))
+                            .then(x=> this.$router.push('/welcome'))
                 } )
                 .catch(error => this.error = error)
 
