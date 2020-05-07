@@ -45,6 +45,7 @@ import { Login } from "../models/Users";
 const GOOGLE_CLIENT_ID = "54172377215-0k6du17ds6up5gm3i1v0d62ehcmno6v2.apps.googleusercontent.com";
 const FACEBOOK_CLIENT_ID = "599472083988800";
 let auth2 = null;
+
 export default {
     data(){
         return {
@@ -58,6 +59,7 @@ export default {
         const googleScriptTag = document.createElement('script')
         googleScriptTag.setAttribute('src', 'https://apis.google.com/js/api:client.js')
         document.head.appendChild(googleScriptTag)
+
         googleScriptTag.onload = () => {
             // the global gapi variable is created by loading that script
             gapi.load('auth2', () => {
@@ -67,8 +69,11 @@ export default {
                     scope: 'profile email'
                 })
             })
+
         }
+
         
+
         window.fbAsyncInit = function() {
             FB.init({
             appId      : FACEBOOK_CLIENT_ID,
@@ -77,6 +82,7 @@ export default {
             version    : 'v3.0'
             });
         };
+
         (function(d, s, id){
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) {return;}
@@ -84,12 +90,13 @@ export default {
             js.src = "https://connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+
     },
     methods: {
         async login(){
             try {
                 await Login(this.email, this.password);
-                this.$router.push('/game');
+                this.$router.push('/home');
             } catch (error) {
                 this.error = error;
             }
@@ -106,21 +113,25 @@ export default {
                     console.log('Family Name: ' + profile.getFamilyName());
                     console.log("Image URL: " + profile.getImageUrl());
                     console.log("Email: " + profile.getEmail());
+
                     this.profile_picture = profile.getImageUrl();
+
                     return Login("google", googleUser.getAuthResponse().access_token)
-                            .then(x=> this.$router.push('/game'))
+                            .then(x=> this.$router.push('/home'))
                 } )
                 .catch(error => this.error = error)
+
         },
         facebook_login(){
             FB.login(response => {
                     console.log(response);
+
                     FB.api('/me?fields=email,name,picture', response => {
                         console.log(response);
                         this.profile_picture = response.picture.data.url;
                     });
                     Login("facebook", response.authResponse.accessToken)
-                        .then(x=> this.$router.push('/game'))
+                        .then(x=> this.$router.push('/home'))
                         .catch(error => this.error = error)
  
                 }, 
@@ -132,4 +143,5 @@ export default {
 </script>
 
 <style>
+
 </style>
