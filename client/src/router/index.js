@@ -4,7 +4,7 @@ import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Signup from '../views/Signup.vue'
 import welcome from '../views/welcome.vue'
-import tools from '../views/Tools.vue'
+import tools from '../views/BMI.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -37,12 +37,12 @@ const routes = [
     component: Login
   },
   {
-    path: '/tools',
-    name: 'Tools',
+    path: '/BMI',
+    name: 'BMI',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: tools
+    component: BMI
   },
   {
     path: '/welcome',
@@ -60,5 +60,9 @@ const router = new VueRouter({
   routes
 });
 
+router.beforeEach( (to, from, next) => {
+  if( to.meta.isSecret && !CurrentUser) next('/login');
+  else next();
+});
 
 export default router
