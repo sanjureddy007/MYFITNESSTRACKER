@@ -1,4 +1,3 @@
-import { CurrentUser } from "./Users";
 import myFetch from "./myFetch";
 
 let interval;
