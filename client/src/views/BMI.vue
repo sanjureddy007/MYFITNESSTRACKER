@@ -5,33 +5,8 @@
         <div class="tile is-ancestor is-8 notification">
             
             <div class="tile is-parent">
-                
-                <article class="tile is-child box notification is-warning">
-                    <p class="title">Target Weight</p>
-                    <p class="subtitle">Dial in Your Target Weight</p>
-                    <!-- v-on: binding button click to add a lb to tWeight data object, listening for click event -->
-                    <!-- v-bind to elements and control the value via the Vue-->
-                    <!-- @ is shorthand for v:on -->
-                    <div class="buttons">
-                        <button class="button is-primary" @click="add(1)">Add 1 lb</button>
-                        <!-- v-on: binding button click to sub a lb from tWeight data object --> 
-                        <button class="button is-danger" v-on:click="sub(1)">Lose 1 lb</button>
-                        <!-- v-on: double click adds 10 lbs, listening for click event -->
-                        <!-- @ is shorthand for v:on -->
-                        <button class="button is-primary" @dblclick="add(10)">Add 10 lbs</button>
-                        <!-- v-on: double click subs 10 lbs --> 
-                        <button class="button is-danger" v-on:dblclick="sub(10)">Lose 10 lbs</button>  
-                    </div>
-                    <p class="subtitle">Target Weight is <strong>{{ targetWeight }}</strong> lbs</p>
-                    <p>(Click for 1, double click for 10)</p>
-                </article>
-
-            </div>
-            
-            <div class="tile is-parent">
-                <article class="tile is-child box notification is-info">
+                <article class="tile is-light">
                 <p class="title">BMI Calculator</p>
-                <p class="subtitle">Calculate Your BMI</p>
                     
                     <div class="field">
                         <div class="control has-icons-left has-icons-right">
@@ -40,7 +15,7 @@
                                 <i class="fas fa-ruler-vertical"></i>
                             </span>
                         </div>
-                            <p class="help">Enter your height (in inches)</p>
+                            <p class="help">Enter your height (in cm)</p>
                     </div>
 
                     <div class="field">
@@ -50,19 +25,19 @@
                                 <i class="fas fa-weight-hanging"></i>
                             </span>
                         </div>
-                            <p class="help">Enter your weight (in pounds)</p>
+                            <p class="help">Enter your weight (in kg)</p>
                     </div>
 
-                    <div class="subtitle">Your BMI = <strong>{{ bmi(heightBMI, weightBMI) }}</strong></div>
+                    <div class="subtitle"> <p>Your BMI = <strong>{{ bmi(heightBMI, weightBMI) }}</strong></p></div>
                 </article>
                 
             </div>
             
             
         
-        </div> <!-- tile is-ancestor closing div -->
+        </div> 
     
-    </div> <!-- class="tools" closing div -->
+    </div> 
 
 </template>
 
@@ -105,3 +80,4 @@ export default {
         margin: auto 0;
     }
 </style>
+

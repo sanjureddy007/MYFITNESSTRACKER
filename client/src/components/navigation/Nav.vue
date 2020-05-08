@@ -14,7 +14,29 @@
     <div class="navbar-start">
       <router-link to="/" class="navbar-item" active-class="is-current">Home</router-link> 
       <router-link to="/about" class="navbar-item" active-class="is-current">About</router-link>
-            <router-link to="/about" class="navbar-item" active-class="is-current">BMI</router-link>
+            <router-link to="/BMI" class="navbar-item" active-class="is-current">BMI</router-link>
+
+      <router-link to="/Excercise" class="navbar-item" active-class="is-current">Excercise</router-link>
+      
+
+      
+      <router-link to="/Heart" class="navbar-item" active-class="is-current">Heart</router-link>
+      <router-link to="/Nutrition" class="navbar-item" active-class="is-current">Nutrition</router-link>
+      
+      <div class="navbar-item has-dropdown is-hoverable">
+         <a class="navbar-item " active-class="is-current">Track</a>
+         <div class="navbar-dropdown">
+          <router-link to="/Activity" class="navbar-item">
+            Activity</router-link>
+          
+           <hr class="navbar-divider">
+          <router-link to="/log" class="navbar-item">
+            Log</router-link>
+          
+         
+          
+        </div>
+      </div>
 
     </div>
     <div class="navbar-end">
