@@ -1,6 +1,6 @@
 <template>
     
-    <div class="tools">
+    <div class="BMI">
         
         <div class="tile is-ancestor is-8 notification">
             

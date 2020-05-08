@@ -4,7 +4,9 @@ import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Signup from '../views/Signup.vue'
 import welcome from '../views/welcome.vue'
-import tools from '../views/BMI.vue'
+import BMI from '../views/BMI.vue'
+import { CurrentUser } from '../models/Users';
+
 Vue.use(VueRouter)
 
 const routes = [
