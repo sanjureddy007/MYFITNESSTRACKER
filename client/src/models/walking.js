@@ -13,11 +13,11 @@ export default {
      })
     },
     async addEx(newex) {
-        await myFetch("/walking/add")
+        await myFetch("/walking/addwalk")
 },
     
 async remove(i) {
-    await myFetch("/walking/remove")         
+    await myFetch("/walking/removewalk")         
 },
 
 }

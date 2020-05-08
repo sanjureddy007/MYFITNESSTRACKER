@@ -13,11 +13,13 @@ export default {
      })
     },
     async addEx(newex) {
-        await myFetch("/cardio/add")
+        await myFetch("/cardio/addcard")
 },
     
 async remove(i) {
-    await myFetch("/cardio/remove")         
+    await myFetch("/cardio/removecard")         
 },
 
 }
+
+

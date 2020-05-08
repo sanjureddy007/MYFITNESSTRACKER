@@ -8,6 +8,8 @@ import BMI from '../views/BMI.vue'
 import walking from '../views/walking.vue'
 import cardio from '../views/cardio.vue'
 import sleep from '../views/sleep.vue'
+import profile from '../views/profile.vue'
+
 import { CurrentUser } from '../models/Users';
 
 Vue.use(VueRouter)
@@ -71,6 +73,14 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: sleep
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: welcome
   },
   {
     path: '/welcome',
