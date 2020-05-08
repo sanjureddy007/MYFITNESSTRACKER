@@ -27,7 +27,7 @@
 </template>   
 
 <script>
-import Excercises from "../models/Excercises";
+import Excercises from "../models/Excercise";
 export default{
   data:()=>({
     newex: "",
@@ -52,7 +52,7 @@ export default{
         }
     },
     created(){
-        Excercise.Init()
+        Excercises.Init()
     }
   }
 </script>
