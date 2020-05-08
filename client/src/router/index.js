@@ -5,6 +5,9 @@ import Login from '../views/Login.vue'
 import Signup from '../views/Signup.vue'
 import welcome from '../views/welcome.vue'
 import BMI from '../views/BMI.vue'
+import walking from '../views/walking.vue'
+import cardio from '../views/cardio.vue'
+import sleep from '../views/sleep.vue'
 import { CurrentUser } from '../models/Users';
 
 Vue.use(VueRouter)
@@ -47,7 +50,28 @@ const routes = [
     component: BMI
   },
   
-  
+  {
+    path: '/walking',
+    name: 'walking',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: walking
+  },{
+    path: '/cardio',
+    name: 'cardio',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: cardio
+  },{
+    path: '/sleep',
+    name: 'sleep',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: sleep
+  },
   {
     path: '/welcome',
     name: 'welcome',

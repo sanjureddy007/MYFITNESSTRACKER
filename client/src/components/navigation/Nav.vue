@@ -15,6 +15,9 @@
       <router-link to="/" class="navbar-item" active-class="is-current">Home</router-link> 
       <router-link to="/about" class="navbar-item" active-class="is-current">About</router-link>
             <router-link to="/BMI" class="navbar-item" active-class="is-current">BMI</router-link>
+             <router-link to="/cardio" class="navbar-item" active-class="is-current">cardio</router-link>
+              <router-link to="/walking" class="navbar-item" active-class="is-current">walking</router-link>
+               <router-link to="/sleep" class="navbar-item" active-class="is-current">sleep</router-link>
             </div>
       </div>
 
