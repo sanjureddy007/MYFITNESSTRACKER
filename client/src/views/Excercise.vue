@@ -31,14 +31,14 @@ import Excercises from "../models/Excercise";
 export default{
   data:()=>({
     newex: "",
-    workout: workouts.State.workouts,
+    workout: Excercises.State.Excercises,
     isAdmin: true
   }),
   methods: {
     
     async remove(i){
         try {
-            await workouts.State.workouts.remove(i)
+            await Excercises.State.Excercises.remove(i)
         } catch (error) {
             this.error = error
         }
@@ -46,7 +46,7 @@ export default{
     },
     async addEx(newex){
         try {
-            await workouts.State.workouts.addEx(newex)
+            await Excercises.State.Excercises.addEx(newex)
         } catch (error) {
             this.error = error;
         }
