@@ -35,7 +35,7 @@ export default{
     },
     async addEx(newwalk){
         try {
-            await walks.State.walks.walk(newswalk)
+            await walks.State.walks.walk(newwalk)
         } catch (error) {
             this.error = error;
         }

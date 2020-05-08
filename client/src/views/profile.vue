@@ -104,16 +104,16 @@
 </template>
 
 <script>
-import Profile from '../models/Profile'
+import profile from '../models/profile'
 export default {
     data: () => ({
-        Profile,
-        image: Profile.State.currUser.profilePic,
-        name: Profile.State.currUser.Name,
-        city: Profile.State.currUser.City
+        profile,
+        image: profile.State.currUser.profilePic,
+        name: profile.State.currUser.Name,
+        city: profile.State.currUser.City
         }),
     created(){
-        Profile.Init()
+        profile.Init()
     }
 }
 </script>

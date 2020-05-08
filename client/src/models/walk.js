@@ -6,18 +6,18 @@ export default {
 
     State: {},
     Init() {
-        myFetch('/walking')
+        myFetch('/walk')
                          .then(x=> { 
                 this.State = x;
                                   console.log(x);
      })
     },
     async addEx(newex) {
-        await myFetch("/walking/addwalk")
+        await myFetch("/walk/addwalk")
 },
     
 async remove(i) {
-    await myFetch("/walking/removewalk")         
+    await myFetch("/walk/removewalk")         
 },
 
 }

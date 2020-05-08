@@ -1,9 +1,10 @@
 const express = require('express');
 const path = require('path');
 
-const gameController = require('./controllers/game');
-const usersController = require('./controllers/users');
-
+const cardioController = require('./controller/cardio');
+const walkController = require('./controller/walk');
+const sleepController = require('./controller/sleep');
+const usersController = require('./controller/Users');
 
 
 const app = express();
@@ -28,8 +29,12 @@ app
     .use(express.urlencoded({ extended: true }))
     .use(express.static( __dirname + '/../client/dist'))
     .get('/', (req, res) => res.send('This class is awesome!') )
-    .use('/game', gameController)
-    .use('/users', usersController)
+    .use('/sleep', sleepController)
+    .use('/cardio', cardioController)
+    .use('/walk', walkController)
+    .use('/Users', usersController)
+
+
 
     .use((req, res) => {
         const homePath = path.join( __dirname , '/../client/dist/index.html');
