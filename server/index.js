@@ -1,38 +1,45 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+const express = require('express');
+const path = require('path');
 
-import Home from '../views/Home.vue';
-import Game from '../views/Game.vue';
-import Login from '../views/Login.vue';
-import { CurrentUser } from '../models/Users';
+const gameController = require('./controllers/game');
+const usersController = require('./controllers/users');
 
-Vue.use(VueRouter)
 
-const routes = [
-  { path: '/', name: 'Home', component: Home },
-  { path: '/game', name: 'Game', component: Game, meta: { isSecret: true } },
-  { path: '/login', name: 'Login', component: Login },
-  
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
-]
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
+const app = express();
+const port = 3000;
+
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+    next();
 });
 
-router.beforeEach( (to, from, next) => {
-  if( to.meta.isSecret && !CurrentUser) next('/login');
-  else next();
+app.use(function(req, res, next) {
+    const arr = (req.headers.authorization || "").split(" ");
+    if(arr.length > 1 && arr[1] != null){
+        req.userId = +arr[1];
+    }
+    next();
 });
 
+app
+    .use(express.json())
+    .use(express.urlencoded({ extended: true }))
+    .use(express.static( __dirname + '/../client/dist'))
+    .get('/', (req, res) => res.send('This class is awesome!') )
+    .use('/game', gameController)
+    .use('/users', usersController)
 
-export default router
+    .use((req, res) => {
+        const homePath = path.join( __dirname , '/../client/dist/index.html');
+        console.log(homePath);
+        res.sendFile(homePath)
+    })
+    .use( (err, req, res, next ) => {
+        console.error(err);
+        const errorCode = err.code || 500;
+        res.status(errorCode).send({ message: err.message });
+    } )
+
+app.listen(port, () => console.log(`Listening at http://localhost:${port}`));
