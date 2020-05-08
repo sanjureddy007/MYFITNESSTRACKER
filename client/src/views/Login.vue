@@ -45,7 +45,7 @@ export default {
         login(){
             try {
                 Login(this.email, this.password);
-                this.$router.push('/welcome');
+                this.$router.push('/Excercise');
             } catch (error) {
                 this.error = error;
             }
