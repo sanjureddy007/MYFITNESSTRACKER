@@ -1,6 +1,4 @@
 
-
-
 <template>
     <section>
         <p class="content"><b>Selected:</b> {{ selected }}</p>
