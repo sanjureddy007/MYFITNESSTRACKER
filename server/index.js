@@ -1,10 +1,10 @@
 const express = require('express');
 const path = require('path');
 
-const cardioController = require('./controller/cardio');
-const walkController = require('./controller/walk');
-const sleepController = require('./controller/sleep');
-const usersController = require('./controller/Users');
+const cardioController = require('./controllers/cardio');
+const walkController = require('./controllers/walk');
+const sleepController = require('./controllers/sleep');
+const usersController = require('./controllers/Users');
 
 
 const app = express();

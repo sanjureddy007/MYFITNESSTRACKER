@@ -9,6 +9,8 @@ import walk from '../views/walk.vue'
 import cardio from '../views/cardio.vue'
 import sleep from '../views/sleep.vue'
 import profile from '../views/profile.vue'
+import ac from '../views/ac.vue'
+
 
 import { CurrentUser } from '../models/Users';
 
@@ -35,7 +37,15 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: Signup
-    },  {
+    }, 
+    {
+      path: '/ac',
+      name: 'ac',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: ac
+      }, {
     path: '/login',
     name: 'Login',
     // route level code-splitting
